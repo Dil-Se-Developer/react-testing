@@ -1,5 +1,6 @@
 import "./App.css";
 import { Application } from "./components/application/application";
+import { Counter } from "./components/counter/counter";
 import { Skills } from "./components/skills/skills";
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
   return (
     <div className="App">
       {/* <Application /> */}
-      <Skills skills={skills} />
+      {/* <Skills skills={skills} /> */}
+      <Counter />
     </div>
   );
 }
