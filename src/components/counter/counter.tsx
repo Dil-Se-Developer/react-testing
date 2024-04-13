@@ -1,16 +1,16 @@
-import { useState } from "react";
-import { act } from "react-dom/test-utils";
+import { useState } from 'react'
+import { act } from 'react-dom/test-utils'
 
 export const Counter = () => {
-  const [count, setCount] = useState(0);
-  const [amount, setAmount] = useState(0);
+  const [count, setCount] = useState(0)
+  const [amount, setAmount] = useState(0)
   return (
     <div>
       <h1>{count}</h1>
       <button
         onClick={() =>
           act(() => {
-            setCount(count + 1);
+            setCount(count + 1)
           })
         }
       >
@@ -22,19 +22,19 @@ export const Counter = () => {
         value={amount}
         onChange={(e) =>
           act(() => {
-            setAmount(parseInt(e.target.value));
+            setAmount(parseInt(e.target.value))
           })
         }
       />
       <button
         onClick={() =>
           act(() => {
-            setCount(amount);
+            setCount(amount)
           })
         }
       >
         Set
       </button>
     </div>
-  );
-};
+  )
+}
