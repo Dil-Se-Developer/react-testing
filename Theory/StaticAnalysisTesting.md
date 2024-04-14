@@ -1,4 +1,4 @@
-# Static analysis testing
+# Static Analysis Testing
 
 **Process of verifying that your code meets certain expectations without actually running it.**
 
